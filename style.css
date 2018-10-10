@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body, html {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Lato';
+}
+
+body {
+    /*background-color: linen;*/
+}
+
+.headerbar {
+	margin: 20px;
+}
+
+.logo, .title {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.logo {
+	max-height: 80px;
+}
+
+.title {
+	margin-left: 50px;
+}
+
+.title > h1 {
+	line-height: 80px;
+	margin: 0;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	top: 100px;
+	width: 100%;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 32px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+.main-block {
+	top: 140px;
+	width: 100%;
+}
+
+.main-block > * {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+}
+
+.container > a {
+	margin: 12px 0;
+}
+
+.program-list > li {
+	text-align: left;
+	vertical-align: top;
+	display: inline-block;
+	line-height: 1.5;
+	margin: 10px;
+	margin: 10px 50px;
+}
+
+.program-list {
+	padding: 0;
+}
+
+.program-types > ul > li {
+	padding-bottom: 10px;
+}
