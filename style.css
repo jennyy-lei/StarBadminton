@@ -4,6 +4,7 @@ body, html {
 	margin: 0;
 	overflow-x: hidden;
 	font-family: 'Lato';
+	letter-spacing: 1px;
 }
 
 body {
@@ -47,10 +48,11 @@ body {
 	padding: 14px 32px;
 	text-decoration: none;
 	font-size: 17px;
+	transition: 0.5s;
 }
 
 .navbar a:hover {
-	background: #ddd;
+	background: #eee;
 	color: black;
 }
 
@@ -69,13 +71,50 @@ h3 {
 	margin: 0;
 }
 
-.container > a {
-	margin: 12px 0;
+.container {
+	/*display: block;*/
+}
+
+.container > a{
+	margin: 10px 0;
+}
+
+.container {
+	margin: 10px 0;
+}
+
+.img-gallery {
+	position: relative;
+}
+
+img {
+	position: absolute;
+	opacity: 0;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.selected-img {
+	opacity: 1;
+	z-index: 1;
+}
+
+.displayed-img {
+	position: absolute;
+	bottom: 0;
+}
+
+.img-circle {
+	background-color: tomato;
+	height: 50px;
+	width: 50px;
+	z-index: 50;
 }
 
 .program-list > li {
 	text-align: left;
 	vertical-align: top;
+	/*float: left;*/
 	display: inline-block;
 	line-height: 1.5;
 	margin: 10px;
@@ -83,9 +122,45 @@ h3 {
 }
 
 .program-list {
+	margin: 0;
 	padding: 0;
 }
 
 .program-types > ul > li {
 	padding-bottom: 10px;
+}
+
+.footer-container {
+	background-color: #333;
+}
+
+.footer {
+	color: white;
+	padding: 15px 0;
+	margin: 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+.toTop-btn {
+	position: fixed;
+	padding: 6px;
+	bottom: 40px;
+	right: 40px;
+	width: 45px;
+	height: 45px;
+	box-shadow: 0 3px 3px 0px rgba(0, 0, 0 ,0.3);
+	box-shadow: inset 0px -2px 3px -1px rgba(0, 0, 0, 0.3);
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.toTop-btn > img {
+	max-height: 70%;
+	max-width: 70%;
 }

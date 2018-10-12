@@ -16,9 +16,7 @@
 			<a name="top"></a>
 			<div class="headerbar" id="headerbar">
 				<div class="logo">
-					<a href="#home">
-						<img class="logo" src="img/logo-badminton.png" style="width:80px;height:80px;">
-					</a>
+					<img class="logo" src="img/logo-badminton.png" style="width:80px;height:80px;">
 				</div>
 			
 				<div class="title">
@@ -28,26 +26,39 @@
 
 			<div class="navy">
 				<div class="navbar" id="navbar">
-					<a href="#program">Home</a>
-					<a href="#registration">Registration</a>
-					<a href="#program">Programs</a>
-					<a href="#sponsorship">Sponsorship</a>
-					<A href="#contact">Contact</a>
+					<a class="nav-items" href="#program">Home</a>
+					<a class="nav-items" href="#registration">Registration</a>
+					<a class="nav-items" href="#program">Programs</a>
+					<a class="nav-items" href="#sponsorship">Sponsorship</a>
+					<A class="nav-items" href="#contact">Contact</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="main-block">
 			<a name="home"></a>
-			<div class="container" id="container_0">
+			<div class="container home" id="container_0">
 				<h2>Barrhaven Star Badminton Club</h2>
 				<p>Our commitment is to serve the local badminton players. We offer several programs as below.</p>
 
-				<br/>
-				<a href="#top">Back to top</a>
-				<br/>
-				<hr width="100%" size = "1px" noshade/>
+				<!-- <br/> -->
+				<!-- <a href="#top">Back to top</a> -->
+				<!-- <br/> -->
 			</div>
+
+			<div class="img-gallery" id="img-gallery">
+				<div class="displayed-img">
+					<div class="img-circle selected-circle"></div>
+					<div class="img-circle"></div>
+					<div class="img-circle"></div>
+				</div>
+
+				<img class="selected-img" src="img/img1.jpg"/>
+				<img src="img/img2.jpg"/>
+				<img src="img/img3.jpg"/>
+			</div>
+
+			<!-- <hr width="100%" size = "1px" noshade/> -->
 
 			<div class="container" id="container_1">
 				<a name="program">
@@ -95,21 +106,22 @@
 					</ol>
 				</div>
 
-				<a href="#top">Back to top</a>
-				<hr width="100%" size = "1px" noshade/>
+				<!-- <a href="#top">Back to top</a> -->
 			</div>
+
+			<hr width="100%" size = "1px" noshade/>
 
 			<div class="container" id="container_2">
 				<a name="registration">
 					<h3>Registration</h3>
 				</a>
-				<div>
-					<p>See link below.</p>
-					<a href="https://goo.gl/forms/Mfm5sOm5FXHh3v603">2019 Spring Junior Training Registration Link</a>
-				</div>
-				<a href="#top">Back to top</a>
-				<hr width="100%" size = "1px" noshade/>
+				
+				<p>See link below.</p>
+				<a href="https://goo.gl/forms/Mfm5sOm5FXHh3v603" target="_blank">2019 Spring Junior Training Registration Link</a>
+				<!-- <a href="#top">Back to top</a> -->
 			</div>
+
+			<hr width="100%" size = "1px" noshade/>
 
 			<div class="container" id="container_3">
 				<a name="sponsorship">
@@ -117,12 +129,13 @@
 				</a>
 				<div>
 					<p>See link below.</p>
-					<a href="https://www.li-ning-sports.com/sponsorships">Li Ning Sponsorship</a>
+					<a href="https://www.li-ning-sports.com/sponsorships" target="_blank">Li Ning Sponsorship</a>
 					<p>Contact: Bo Wu: stephenbowu@gmail.com</p>
 				</div>
-				<a href="#top">Back to top</a>
-				<hr width="100%" size = "1px" noshade/>
+				<!-- <a href="#top">Back to top</a> -->
 			</div>
+
+			<hr width="100%" size = "1px" noshade/>
 
 			<div class="container" id="container_4">
 				<a name="contact">
@@ -132,18 +145,22 @@
 				<p>Email: barrhavenstar@gmail.com</p>
 			</div>
 			
-			<br/>
-			<a href="#top">Back to top</a>
-			<br/>
-			<hr width="100%" size = "1px" noshade/>
+			<!-- <br/> -->
+			<!-- <a href="#top">Back to top</a> -->
+			<!-- <br/> -->
 		</div>
 
-		<footer>
-			<div class="container">
-				<p class="pull-left">© 2018 Barrhaven Star Badminton Club, All Rights Reserved</p>
-			</div>
-		</footer>
+		<!-- <hr width="100%" size = "1px" noshade/> -->
 
+		<div class="toTop-btn" id="toTop-btn">
+			<img src="img/back-to-top.png"/>
+		</div>
+
+		<div class="footer-container">
+			<p class="footer">© 2018 Barrhaven Star Badminton Club, All Rights Reserved</p>
+		</div>
+
+		<script src="jquery-3.3.1.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>
