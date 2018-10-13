@@ -72,10 +72,6 @@ h3 {
 	margin: 0;
 }
 
-.container {
-	/*display: block;*/
-}
-
 .container > a{
 	margin: 10px 0;
 }
