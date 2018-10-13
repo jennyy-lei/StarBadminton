@@ -38,6 +38,7 @@ body {
 	background-color: #333;
 	top: 100px;
 	width: 100%;
+	z-index: 100;
 }
 
 .navbar a {
@@ -87,11 +88,12 @@ h3 {
 	position: relative;
 }
 
-img {
+.img {
 	position: absolute;
 	opacity: 0;
 	max-height: 100%;
 	max-width: 100%;
+	transition: 0.5s;
 }
 
 .selected-img {
@@ -102,13 +104,27 @@ img {
 .displayed-img {
 	position: absolute;
 	bottom: 0;
+	z-index: 50;
 }
 
 .img-circle {
-	background-color: tomato;
-	height: 50px;
-	width: 50px;
-	z-index: 50;
+	display: inline-block;
+	border: 2px solid white;
+	background-color: transparent;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	margin: 0 5px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.img-circle:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.selected-circle {
+	background-color: white !important;
 }
 
 .program-list > li {
