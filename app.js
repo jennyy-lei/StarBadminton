@@ -22,12 +22,12 @@ function lockNavBar() {
 
 	if (scroll < $(headerbar).outerHeight(true)) {
 		$('body').css('margin-top', '0px');
-		$(navbar).css('position', 'static');
-		$(navbar).css('top', 'auto');
+		navBar.css('position', 'static');
+		navBar.css('top', 'auto');
 	} else if (scroll > $(navBar).offset().top) {
 		$('body').css("margin-top", navHeight + "px");
-		$(navbar).css('position', 'fixed');
-		$(navbar).css('top', '0');
+		navBar.css('position', 'fixed');
+		navBar.css('top', '0');
 	} 
 }
 
@@ -42,7 +42,7 @@ function navScroll() {
 		navItems[i].onclick = function() {
 			// Get anchor location
 			let address = $(this).attr("href");
-			console.log(address);
+
 			if (address == '#top')
 				$('html, body').animate({scrollTop: 0}, 'slow');
 			else
@@ -54,7 +54,7 @@ function navScroll() {
 function setHeight() {
 	let imgGallery = $('#img-gallery');
 
-	$(imgGallery).css("height" , window.innerHeight - ($('#home').outerHeight(true) + $(headerbar).outerHeight(true) + navBar.height()) + 'px');
+	imgGallery.css("height" , window.innerHeight - ($('#home').outerHeight(true) + headerBar.outerHeight(true) + navBar.height()) + 'px');
 }
 
 function imgCircle() {
