@@ -7,8 +7,9 @@ body, html {
 	letter-spacing: 1px;
 }
 
-body {
-    /*background-color: linen;*/
+.web-link {
+	color: tomato;
+	text-decoration: none;
 }
 
 .headerbar {
@@ -142,6 +143,29 @@ h3 {
 	padding-bottom: 10px;
 }
 
+.sponsor-container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.LN-logo {
+	max-width: 20%;
+	padding-right: 24px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.sponsor-text {
+	float: left;
+	width: 80%;
+	padding-left: 50px;
+	box-sizing: border-box;
+	line-height: 1.7em;
+}
+
 .footer-container {
 	background-color: #333;
 }
@@ -156,14 +180,12 @@ h3 {
 
 .toTop-btn {
 	position: fixed;
-	padding: 6px;
-	bottom: 40px;
-	right: 40px;
+	padding: 5px;
+	bottom: 50px;
+	right: 50px;
 	width: 45px;
 	height: 45px;
-	box-shadow: 0 3px 3px 0px rgba(0, 0, 0 ,0.3);
-	box-shadow: inset 0px -2px 3px -1px rgba(0, 0, 0, 0.3);
-	border: solid 1px rgba(0, 0, 0, 0.3);
+	border: solid 1px grey;
 	border-radius: 50%;
 	background-color: white;
 	display: flex;
